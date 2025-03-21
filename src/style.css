@@ -1,12 +1,38 @@
 *{
   margin: 0;
+  border: none;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: 'Poppins';
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-VariableFont_wght.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+  font-weight: 100;
+  font-style: normal;
 }
 
 :root {
   --app-background-color: rgb(45, 45, 45);
   --text-primary-color: rgb(255, 255, 255);
+  --links-primary-color: rgb(255, 255, 255);
+
 }
 
 #app {
@@ -15,5 +41,25 @@
 
   /* content */
   background: var(--app-background-color);
-  color: var(--text-primary-color)
+  color: var(--text-primary-color);
+  padding: 0 700px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Raleway';
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--links-primary-color)
+}
+
+.button{
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  border-radius: 6px;
 }

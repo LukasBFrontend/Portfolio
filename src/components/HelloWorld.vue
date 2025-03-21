@@ -10,4 +10,9 @@ onMounted( async () => {greeting.value = await getWelcome()});
 <template>
   <h1>{{ greeting }}</h1>
   <button @click="createEdgeItems([{person1: 'John'}, {person2: 'Sophie'}])">Testa!</button>
+
 </template>
+
+<style scoped>
+
+</style>
