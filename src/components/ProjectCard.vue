@@ -74,8 +74,4 @@ const props = defineProps({
   position: absolute;
   overflow: hidden;
 }
-
-h3{
-  /* margin-bottom: 1rem; */
-}
 </style>

@@ -37,12 +37,12 @@
 
 #app {
   /* border */
-  height: 1000px;
+  height: 1280px;
 
   /* content */
   background: var(--app-background-color);
   color: var(--text-primary-color);
-  padding: 0 700px;
+  padding: 0 600px;
 
   display: flex;
   flex-direction: column;
@@ -50,6 +50,11 @@
 
 h1 {
   font-family: 'Raleway';
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 a {
