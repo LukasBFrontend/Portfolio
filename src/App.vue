@@ -1,18 +1,18 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent.vue';
-import HeroSection from './components/HeroSection.vue';
-import ProjectCard from './components/ProjectCard.vue';
-import StackSection from './components/StackSection.vue';
+import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-  <HeaderComponent/>
-  <HeroSection/>
-  <StackSection/>
-  <project-card image-src="/exercise_bank.png" title="Exercise Bank" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptas? Ducimus doloremque magni quibusdam, tenetur voluptates rerum."></project-card>
+  <div class="wrapper">
+    <HeaderComponent/>
+    <HomeView/>
+  </div>
 </template>
 
 <style scoped>
-
+  .wrapper{
+    width: 1500px;
+    margin: 0 auto;
+  }
 </style>

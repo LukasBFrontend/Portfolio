@@ -14,7 +14,7 @@ import { ref } from 'vue';
       </h1>
       <button class="button">Contact</button>
     </div>
-    <img class="profile" src="../../public/profile.png" alt="profil">
+    <img class="profile" src="/images/profile.png" alt="profil">
   </section>
 </template>
 
