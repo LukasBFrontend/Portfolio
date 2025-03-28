@@ -6,18 +6,10 @@ import { ref } from 'vue';
   <header>
     <span class="logo">Developer portfolio <i class="fa-solid fa-laptop"></i></span>
     <nav>
-      <a href="">
-        Home
-      </a>
-      <a href="">
-        About
-      </a>
-      <a href="">
-        Projects
-      </a>
-      <a href="">
-        Skills
-      </a>
+      <router-link :to="{ path: '/'}">Home</router-link>
+      <router-link :to="{ hash: '#about' }">About</router-link>
+      <router-link :to="{ hash: '#projects' }">Projects</router-link>
+      <router-link :to="{ hash: '#skills' }">Skills</router-link>
     </nav>
   </header>
 </template>

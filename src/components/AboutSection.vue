@@ -3,7 +3,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-  <section class="about">
+  <section class="about" id="about">
     <h2>My name is Lukas. I'm a frontend developer.</h2>
     <p>
       I have a passion for creating web applications. I love the challenge of turning abstract ideas into polished and functional experiences. There's nothing more satisfying than seeing all the pieces come together after carefully structuring the inputs.

@@ -5,7 +5,7 @@ const imgWidth = ref('80px')
 </script>
 
 <template>
-  <section>
+  <section id="skills">
     <h2>Tech stack</h2>
     <div class="grid">
       <img src="/images/techstack/Csharp.svg" alt="C-sharp">
