@@ -16,10 +16,35 @@ import ProjectCard from './ProjectCard.vue';
 
 <style scoped>
   .grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 100px;
   }
-  .card{
-    margin: 0 auto;
+    /* Small devices (phones, 576px and up) */
+    @media (min-width: 576px) {
+
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+      /* Styles for tablets */
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .grid{
+      justify-content: space-between;
+    }
+  }
+
+  /* Ultra-wide screens (1440px and up) */
+  @media (min-width: 1440px) {
+
   }
 </style>

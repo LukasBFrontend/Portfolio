@@ -21,9 +21,10 @@ const props = defineProps({
 </template>
 
 <style scoped>
+
   .container{
-    width: 400px;
-    height: 340px;
+    width: 160px;
+    height: 100px;
     position: relative;
   }
 
@@ -50,6 +51,10 @@ const props = defineProps({
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
   }
 
+  h3 {
+    margin-bottom: .5rem;
+  }
+
   .overlay {
   position: absolute;
   bottom: 0;
@@ -62,16 +67,50 @@ const props = defineProps({
   height: 5px;
   padding: .5rem 1.5rem;
   transition: .5s ease;
-}
+  }
 
-.overlay:hover {
+  .overlay:hover {
   height: 70%;
-}
+  }
 
-.text {
+  .text {
   color: white;
   font-size: 20px;
   position: absolute;
   overflow: hidden;
-}
+  }
+
+  /* Small devices (phones, 576px and up) */
+  @media (min-width: 576px) {
+    .container{
+      width: calc(160px*2);
+      height: calc(130px*2);
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+      /* Styles for tablets */
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .container{
+      width: calc(160px*2.2);
+      height: calc(130px*2.2);
+    }
+  }
+
+  /* Ultra-wide screens (1440px and up) */
+  @media (min-width: 1440px) {
+    .container{
+      width: calc(160px*2.5);
+      height: calc(130px*2.5);
+    }
+  }
 </style>

@@ -11,13 +11,34 @@ import HomeView from './views/HomeView.vue';
 </template>
 
 <style scoped>
-  .wrapper{
-    width: 1200px;
-    margin: 0 auto;
+  /* Small devices (phones, 576px and up) */
+  @media (min-width: 576px) {
+      /* Styles for standard phones */
   }
-  @media (width < 1200px) {
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+      /* Styles for tablets */
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+      .wrapper{
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Ultra-wide screens (1440px and up) */
+  @media (min-width: 1440px) {
     .wrapper{
-      width: 100%;
+      width: 1400px;
+      margin: 0 auto;
     }
   }
 </style>

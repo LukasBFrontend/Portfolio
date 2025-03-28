@@ -12,7 +12,11 @@ import { ref } from 'vue';
         <br/>
         Frontend developer
       </h1>
-      <button class="button">Contact</button>
+      <div class="link-wrapper">
+        <a href="https://www.linkedin.com/in/lukas-br%C3%A5kenhielm-7724ab2ba/" target="_blank" class="links"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:brakenhielmlukas@gmail.com" class="links"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://github.com/LukasBFrontend" target="_blank" class="links"><i class="fa-brands fa-github"></i></a>
+      </div>
     </div>
     <img class="profile" src="/images/profile.png" alt="profil">
   </section>
@@ -42,9 +46,25 @@ import { ref } from 'vue';
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 4rem;
+    justify-content: space-between;
   }
-  button{
-    width: fit-content
+
+  .link-wrapper{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .links{
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    color: white;
+    background: black;
   }
 </style>
