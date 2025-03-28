@@ -28,6 +28,7 @@ import { ref } from 'vue';
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+    max-width: 100%;
   }
   .logo{
     font-size: 2.5rem;

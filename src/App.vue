@@ -12,7 +12,12 @@ import HomeView from './views/HomeView.vue';
 
 <style scoped>
   .wrapper{
-    width: 1500px;
+    width: 1200px;
     margin: 0 auto;
+  }
+  @media (width < 1200px) {
+    .wrapper{
+      width: 100%;
+    }
   }
 </style>
