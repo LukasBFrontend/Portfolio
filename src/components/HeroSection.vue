@@ -34,7 +34,7 @@ import { ref } from 'vue';
   .profile{
     height: 400px;
     border-radius: 50%;
-    background: rgb(107, 107, 255);
+    background: darkcyan;
   }
 
   h1{
@@ -66,5 +66,14 @@ import { ref } from 'vue';
     font-size: 2.5rem;
     color: white;
     background: black;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+
+  .links:hover{
+    transform: translateY(-10px);
   }
 </style>

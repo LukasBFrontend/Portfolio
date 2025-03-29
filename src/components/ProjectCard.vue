@@ -10,22 +10,30 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="container">
+  <a class="card" href={projectLink} target="_blank">
     <div class="image" :style="{backgroundImage: `url(${imageSrc})`}">
     </div>
     <div class="overlay">
+        <div class="line"></div>
         <section class="text"><h3>Description</h3><p>{{ description }}</p></section>
       </div>
     <h2 class="button">{{ title }}</h2>
-  </div>
+  </a>
 </template>
 
 <style scoped>
 
-  .container{
+  .card{
+    border-radius: 8px;
     width: 160px;
     height: 100px;
     position: relative;
+
+    transition: .3s box-shadow;
+  }
+
+  .card:hover{
+    box-shadow: 0px 0px 0px 10px rgba(173, 216, 230, 1);
   }
 
   .image {
@@ -38,6 +46,7 @@ const props = defineProps({
   }
 
   h2 {
+    width: 50%;
     float: left;
     position: absolute;
     left: 0px;
@@ -49,6 +58,8 @@ const props = defineProps({
     color: black;
     background: white;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+
+    transition: width .5s ease;
   }
 
   h3 {
@@ -56,33 +67,42 @@ const props = defineProps({
   }
 
   .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 0px 0px 8px 8px;
-  background-color: #645cfa;
-  overflow: hidden;
-  width: 100%;
-  height: 5px;
-  padding: .5rem 1.5rem;
-  transition: .5s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0px 0px 8px 8px;
+    background-color: darkcyan;
+    overflow: hidden;
+    width: 100%;
+    height: 20px;
+    padding: .5rem 1.5rem;
+    transition: .5s ease;
   }
 
-  .overlay:hover {
-  height: 70%;
+  .overlay:hover, .overlay:has(+ h2:hover) {
+    height: 75%;
+  }
+
+  .overlay:hover + h2, h2:hover{
+    width: 102%;
+  }
+
+  .line{
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
   }
 
   .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
   }
 
   /* Small devices (phones, 576px and up) */
   @media (min-width: 576px) {
-    .container{
+    .card{
       width: calc(160px*2);
       height: calc(130px*2);
     }
@@ -100,7 +120,7 @@ const props = defineProps({
 
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
-    .container{
+    .card{
       width: calc(160px*2.2);
       height: calc(130px*2.2);
     }
@@ -108,7 +128,7 @@ const props = defineProps({
 
   /* Ultra-wide screens (1440px and up) */
   @media (min-width: 1440px) {
-    .container{
+    .card{
       width: calc(160px*2.5);
       height: calc(130px*2.5);
     }

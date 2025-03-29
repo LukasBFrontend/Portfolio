@@ -7,9 +7,9 @@ import AboutSection from './AboutSection.vue';
 
 <template>
   <div class="grid">
-    <stack-section class="section"></stack-section>
-    <hr />
     <projects-section class="section"></projects-section>
+    <hr />
+    <stack-section class="section"></stack-section>
     <hr />
     <about-section class="section about"></about-section>
   </div>

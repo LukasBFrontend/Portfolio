@@ -6,10 +6,10 @@ import { ref } from 'vue';
   <header>
     <span class="logo">Developer portfolio <i class="fa-solid fa-laptop"></i></span>
     <nav>
-      <router-link :to="{ path: '/'}">Home</router-link>
-      <router-link :to="{ hash: '#about' }">About</router-link>
-      <router-link :to="{ hash: '#projects' }">Projects</router-link>
-      <router-link :to="{ hash: '#skills' }">Skills</router-link>
+      <router-link class="button" :to="{ path: '/'}" >Home</router-link>
+      <router-link class="button" :to="{ hash: '#about' }">About</router-link>
+      <router-link class="button" :to="{ hash: '#projects' }">Projects</router-link>
+      <router-link class="button" :to="{ hash: '#skills' }">Skills</router-link>
     </nav>
   </header>
 </template>
@@ -35,7 +35,15 @@ import { ref } from 'vue';
 
   nav a{
     font-size: 2rem;
-    font-weight: 100
+    font-weight: 100;
+
+    transition: background 0.2s, color 0.2s;
+
+  }
+
+  nav a:hover{
+    background: lightblue;
+    color: darkslategrey;
   }
 
   /* Small devices (phones, 576px and up) */
