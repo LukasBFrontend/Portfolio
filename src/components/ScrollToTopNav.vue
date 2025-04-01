@@ -5,7 +5,6 @@ import { useWindowScroll } from '@vueuse/core'
 const isDisplayed = ref(false)
 const { y } = useWindowScroll()
 const height = ref(window.innerHeight)
-const width = ref(window.innerWidth)
 const documentHeight = ref(document.body.scrollHeight)
 
 window.addEventListener('scroll', handleScroll);
@@ -17,19 +16,18 @@ onUnmounted(() => {
   window.removeEventListener('resize', handleResize);
 })
 
-function handleScroll(event) {
+function handleScroll() {
   height.value = window.innerHeight;
-  console.log(y.value + height.value, documentHeight.value);
+  documentHeight.value = document.body.scrollHeight;
 
-  setIsDisplayed(0)
+  setIsDisplayed(-50)
 }
 
 function handleResize() {
   height.value = window.innerHeight;
-  width.value = window.innerWidth;
   documentHeight.value = document.body.scrollHeight;
-  console.log(y.value + height.value, documentHeight.value);
-  setIsDisplayed(200);
+
+  setIsDisplayed(-50);
 }
 
 function setIsDisplayed(offset) {

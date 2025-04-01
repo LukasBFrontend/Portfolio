@@ -165,7 +165,7 @@ function closeImageOverlay(event) {
     left: 0;
     right: 0;
     border-radius: 0px 0px 8px 8px;
-    background-color: rgb(34, 109, 109);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     width: 100%;
     height: 20px;
@@ -190,7 +190,7 @@ function closeImageOverlay(event) {
   }
 
   .line{
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(88, 88, 88, 0.5);
     border-radius: 8px;
     margin-bottom: 1rem;
   }
