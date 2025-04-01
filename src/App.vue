@@ -1,6 +1,7 @@
 <script setup>
 import HeaderComponent from './components/HeaderComponent.vue';
 import HomeView from './views/HomeView.vue';
+import ScrollToTopNav from './components/ScrollToTopNav.vue';
 import { RouterView } from 'vue-router';
 </script>
 
@@ -8,6 +9,7 @@ import { RouterView } from 'vue-router';
   <div class="wrapper">
     <HeaderComponent/>
     <RouterView/>
+    <ScrollToTopNav/>
   </div>
 </template>
 

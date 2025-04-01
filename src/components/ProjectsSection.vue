@@ -7,8 +7,9 @@ import ProjectCard from './ProjectCard.vue';
   <section id="projects">
     <h2>Projects</h2>
     <div class="grid">
-      <project-card class="card" href="https://my-exercise-bank.vercel.app/" image-src="/images/exercise_bank.png" title="Exercise Bank" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptas? Ducimus doloremque magni quibusdam, tenetur voluptates rerum."></project-card>
-      <project-card class="card" image-src="/images/exercise_bank.png" title="Exercise Bank" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptas? Ducimus doloremque magni quibusdam, tenetur voluptates rerum."></project-card>
+      <project-card class="card" href="https://my-exercise-bank.vercel.app/" image-src="/images/exercise_bank.png" title="Exercise Bank" description="A mock webapplication allowing the user to search a bank of exercises and display information about them. Meant to help in exercise selection for your workout."></project-card>
+      <project-card class="card" :isImageLink="true" image-src="/images/en_slemmig_torsk.png" title="En slemmig torsk" description="Scene modelled and captured in Blender. The image is a reference to a song by Swedish
+      punk rock KSMB called 'En slemmig torsk', translating to 'A slimy cod' in English."></project-card>
       <project-card class="card" image-src="/images/exercise_bank.png" title="Exercise Bank" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptas? Ducimus doloremque magni quibusdam, tenetur voluptates rerum."></project-card>
     </div>
   </section>

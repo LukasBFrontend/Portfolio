@@ -3,7 +3,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-  <header>
+  <header id="header">
     <span class="logo">Developer portfolio <i class="fa-solid fa-laptop"></i></span>
     <nav>
       <router-link class="button" :to="{ path: '/'}" >Home</router-link>
