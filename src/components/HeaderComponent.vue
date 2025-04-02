@@ -36,14 +36,16 @@ import { ref } from 'vue';
   nav a{
     font-size: 2rem;
     font-weight: 100;
+    padding: .5rem .8rem;
 
     transition: background 0.2s, color 0.2s;
 
   }
 
   nav a:hover{
-    background: lightblue;
-    color: darkslategrey;
+    background: #FFF44F;
+
+    color: rgb(65, 65, 70);
   }
 
   /* Small devices (phones, 576px and up) */

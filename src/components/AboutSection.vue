@@ -4,7 +4,7 @@ import { ref } from 'vue';
 
 <template>
   <section class="about" id="about">
-    <h2>My name is Lukas. I'm a frontend developer.</h2>
+    <h2>My name is Lukas. I'm a <span style="color: #6080dd">frontend developer.</span></h2>
     <p>
       I have a passion for creating web applications. I love the challenge of turning abstract ideas into polished and functional experiences. There's nothing more satisfying than seeing all the pieces come together after carefully structuring the inputs.
     </p>
@@ -14,7 +14,7 @@ import { ref } from 'vue';
     </p>
     <br/>
     <p>
-      Currently, I am studying frontend development at IT-Högskolan in Stockholm. As a junior developer, my focus is on continuously growing my knowledge through hands-on practice and experience. I am seeking an internship for the fall of 2025 and spring of 2026. I'm eager to bring my skills and enthusiasm to the right team. Let's connect!
+      Currently, I am studying frontend development at IT-Högskolan in Stockholm. As a junior developer, my focus is on continuously growing my knowledge through hands-on practice and experience. I am seeking an <span style="text-decoration: 2px dotted underline #FFF44F">internship for the fall of 2025 and spring of 2026 </span>. I'm eager to bring my skills and enthusiasm to the right team. Let's connect!
     </p>
   </section>
 </template>

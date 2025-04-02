@@ -50,7 +50,7 @@ function setIsDisplayed(offset) {
 
 <style scoped>
 .overlay{
-  background: linear-gradient(rgba(48, 48, 51), rgb(15, 15, 15));
+  background: linear-gradient(rgb(59, 59, 65), rgb(15, 15, 15));
 
   height: 100%;
   display:flex;
@@ -64,7 +64,15 @@ function setIsDisplayed(offset) {
   width: 100%;
   position: absolute;
   left: 0;
-  background: rgba(48, 48, 51);
+  background: rgb(59, 59, 65);
+}
+
+.button{
+  color: #6080dd;
+}
+
+.button:hover{
+  color: #FFF44F;
 }
 
 .v-enter-active,

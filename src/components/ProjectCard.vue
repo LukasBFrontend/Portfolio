@@ -75,10 +75,11 @@ function closeImageOverlay(event) {
     overflow: hidden;
 
     transition: .3s box-shadow;
+    box-shadow: 0px 0px 2px 2px #fff34fce;
   }
 
   .card:hover{
-    box-shadow: 0px 0px 0px 10px rgba(173, 216, 230, 1);
+    box-shadow: 0px 0px 0px 6px #FFF44F;
   }
 
   .image {
@@ -165,7 +166,7 @@ function closeImageOverlay(event) {
     left: 0;
     right: 0;
     border-radius: 0px 0px 8px 8px;
-    background-color: rgb(0, 0, 0);
+    background-color: #686868;
     overflow: hidden;
     width: 100%;
     height: 20px;
@@ -196,7 +197,7 @@ function closeImageOverlay(event) {
   }
 
   .text {
-    color: white;
+    color: #ffffff;
     font-size: 20px;
     position: absolute;
     overflow: hidden;

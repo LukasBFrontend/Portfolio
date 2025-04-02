@@ -22,6 +22,10 @@ import ProjectCard from './ProjectCard.vue';
     flex-wrap: wrap;
     row-gap: 100px;
   }
+
+  h2{
+    text-decoration: underline dotted #FFF44F;
+  }
     /* Small devices (phones, 576px and up) */
     @media (min-width: 576px) {
 

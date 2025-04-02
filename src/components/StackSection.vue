@@ -24,6 +24,7 @@ const imgWidth = ref('80px')
   h2 {
     text-align: center;
     margin-bottom: 52px;
+    text-decoration: underline dotted #FFF44F;
   }
   section {
     --img-width: v-bind(imgWidth);

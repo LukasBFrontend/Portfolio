@@ -10,7 +10,7 @@ import { ref } from 'vue';
         <br/>
         I'm Lukas
         <br/>
-        Frontend developer
+        <span style="color: #4169E1; text-shadow: 3px 3px 3px rgba(0,0,0,.15);">Frontend developer</span>
       </h1>
       <div class="link-wrapper">
         <a href="https://www.linkedin.com/in/lukas-br%C3%A5kenhielm-7724ab2ba/" target="_blank" class="links"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -18,7 +18,10 @@ import { ref } from 'vue';
         <a href="https://github.com/LukasBFrontend" target="_blank" class="links"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
-    <img class="profile" src="/images/profile.png" alt="profil">
+    <div class="profile-wrapper">
+      <img class="profile-background" src="/images/profile_background_waves.png" alt="profile-background">
+      <img class="profile" src="/images/profile.png" alt="profile">
+    </div>
   </section>
 </template>
 
@@ -31,10 +34,30 @@ import { ref } from 'vue';
     padding: 100px 0;
   }
 
+  .profile-wrapper{
+    position: relative;
+    width: 400px;
+    height: 422px;
+  }
   .profile{
-    height: 400px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    background: darkcyan;
+    z-index: 900;
+  }
+
+  .profile-background{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 0;
+
+    background-color: #5275df;
+
   }
 
   h1{
@@ -65,7 +88,7 @@ import { ref } from 'vue';
 
     font-size: 2.5rem;
     color: white;
-    background: black;
+    background: #686868;
 
     transition-property: transform;
     transition-duration: 0.2s;
@@ -75,5 +98,6 @@ import { ref } from 'vue';
 
   .links:hover{
     transform: translateY(-10px);
+    color: #FFF44F;
   }
 </style>

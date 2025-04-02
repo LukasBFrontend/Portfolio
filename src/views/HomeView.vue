@@ -12,7 +12,7 @@ import ContentGrid from '../components/ContentGrid.vue';
 </template>
 
 <style scoped>
-  /* .wrapper{
-    width: 400px;
+/*   .wrapper{
+    background-color: #4d4d4d;
   } */
 </style>

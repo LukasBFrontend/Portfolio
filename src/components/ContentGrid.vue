@@ -27,11 +27,12 @@ import AboutSection from './AboutSection.vue';
   }
 
   hr {
-  border: 3px solid #474747;
+  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   color: #333;
   margin: 3rem 0;
   }
+
 
   /* Small devices (phones, 576px and up) */
   @media (min-width: 576px) {
