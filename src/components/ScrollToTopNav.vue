@@ -68,7 +68,7 @@ function setIsDisplayed(offset) {
 }
 
 .button{
-  color: #6080dd;
+  color: white;
 }
 
 .button:hover{

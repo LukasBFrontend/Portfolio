@@ -32,6 +32,8 @@ import { ref } from 'vue';
     justify-content: space-around;
     align-items: center;
     padding: 100px 0;
+    box-shadow: 16px 16px 0px 0px #FFF44F;
+    border-radius: 8px
   }
 
   .profile-wrapper{
