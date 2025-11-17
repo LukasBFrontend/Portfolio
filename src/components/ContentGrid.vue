@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import StackSection from '../components/StackSection.vue';
 import ProjectsSection from '../components/ProjectsSection.vue';
 import AboutSection from './AboutSection.vue';

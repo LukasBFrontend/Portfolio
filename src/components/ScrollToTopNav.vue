@@ -39,7 +39,6 @@ function setIsDisplayed(offset) {
 
 <template>
   <div class="background">
-
     <Transition>
       <div v-show="isDisplayed" class="overlay" v-on:scroll="handleScroll">
         <router-link class="button" :to="{ hash: '#header'}" >CONNECT</router-link>

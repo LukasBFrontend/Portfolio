@@ -10,7 +10,7 @@ import { ref } from 'vue';
         <br/>
         I'm Lukas
         <br/>
-        <span style="color: #4169E1; text-shadow: 3px 3px 3px rgba(0,0,0,.15);">Frontend developer</span>
+        <span style="color: #4169E1; text-shadow: 3px 3px 3px rgba(0,0,0,.15);">Web developer</span>
       </h1>
       <div class="link-wrapper">
         <a href="https://www.linkedin.com/in/lukas-br%C3%A5kenhielm-7724ab2ba/" target="_blank" class="links"><i class="fa-brands fa-linkedin-in"></i></a>
