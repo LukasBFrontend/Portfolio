@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <section class="about" id="about">
     <h2>My name is Lukas. I'm a <span style="color: #6080dd">web developer.</span></h2>

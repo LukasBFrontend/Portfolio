@@ -1,46 +1,52 @@
 <script setup>
-import { ref, nextTick, defineProps } from 'vue';
+  import { ref, defineProps } from 'vue';
 
-const showScreenOverlay = ref(false)
+  const showScreenOverlay = ref(false)
 
-defineProps({
-  imageSrc: {
-    type: String,
-    default: 'default-image.jpg'
-  },
-  title: {
-    type: String,
-    default: 'Title'
-  },
-  projectLink: {
-    type: String,
-    default: '/'
-  },
-  isImageLink: {
-    type: Boolean,
-    default: false
-  },
-  description: {
-    type: String,
-    default: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis eligendi laboriosam unde repudiandae. Velit quidem laborum in numquam corporis?'
+  defineProps({
+    imageSrc: {
+      type: String,
+      default: 'default-image.jpg'
+    },
+    title: {
+      type: String,
+      default: 'Title'
+    },
+    projectLink: {
+      type: String,
+      default: '/'
+    },
+    isImageLink: {
+      type: Boolean,
+      default: false
+    },
+    description: {
+      type: String,
+      default: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis eligendi laboriosam unde repudiandae. Velit quidem laborum in numquam corporis?'
+    }
+  });
+
+  function openImageOverlay(event) {
+    showScreenOverlay.value = true;
   }
-});
 
-function openImageOverlay(event) {
-  showScreenOverlay.value = true;
-}
-
-function closeImageOverlay(event) {
-  showScreenOverlay.value = false;
-}
+  function closeImageOverlay(event) {
+    showScreenOverlay.value = false;
+  }
 </script>
 
 <template>
   <div v-if="!isImageLink" class="card" >
     <a :href="projectLink" target="_blank" class="image" :style="{ backgroundImage: `url(${imageSrc})` }"></a>
     <div class="overlay">
-      <div class="line"></div>
+      <div style="margin-bottom: .5rem"><i class="fa-solid fa-align-left" style="font-size:larger; margin-right: 1rem;"></i>Description</div>
       <section class="text"><p>{{ description }}</p></section>
+      <div class="link">
+        <a :href="projectLink" target="_blank">
+          <span class="link-text">{{ projectLink }}</span>
+          <i style="margin-left: .5rem"class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
     </div>
     <h2 class="button">{{ title }}</h2>
   </div>
@@ -49,7 +55,7 @@ function closeImageOverlay(event) {
     <div class="card">
       <div class="image"  @click="openImageOverlay" :style="{ backgroundImage: `url(${imageSrc})` }"></div>
       <div class="overlay">
-        <div class="line"></div>
+        <div style="margin-bottom: .5rem"><i class="fa-solid fa-align-left" style="font-size:larger; margin-right: 1rem;"></i>Description</div>
         <section class="text"><p>{{ description }}</p></section>
       </div>
       <h2 class="button">{{ title }}</h2>
@@ -148,7 +154,6 @@ function closeImageOverlay(event) {
     font-weight: 400;
     color: black;
     background: white;
-    /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4); */
 
     transition: width .5s ease;
   }
@@ -162,22 +167,33 @@ function closeImageOverlay(event) {
   }
   .overlay {
     position: absolute;
-    bottom: 0;
+    box-sizing: border-box;
+    bottom: -3.5rem;
     left: 0;
     right: 0;
-    border-radius: 0px 0px 8px 8px;
-    background-color: #686868;
+    background-color: #272727;
     overflow: hidden;
     width: 100%;
-    height: 20px;
-    padding: .5rem 1.5rem;
-    transition:all 0.5s ease;
+    height: 43px;
+    padding: .75rem 1.5rem;
+    transition: all 0.5s ease;
     scrollbar-gutter: stable;
   }
 
+  .card:hover .overlay{
+    bottom: 0rem;
+  }
+
   .overlay:hover, .overlay:has(+ h2:hover) {
-    height: 82%;
+    height: 90%;
     animation: enableScroll 1.5s forwards;
+  }
+
+  .overlay:hover > .link, .overlay:has(+ h2:hover) > .link{
+    opacity: 100%;
+
+    transition: all 0.75s ease;
+    transition-delay: .35s;
   }
 
   .overlay:hover + h2, h2:hover{
@@ -190,20 +206,43 @@ function closeImageOverlay(event) {
     }
   }
 
-  .line{
-    border: 2px solid rgba(88, 88, 88, 0.5);
-    border-radius: 8px;
-    margin-bottom: 1rem;
+  .link{
+    margin-top: 35px;
+    position: sticky;
+    bottom: 0;
+    opacity: 0%;
+    width: 100%;
+
+    transition: 0s;
+    transition-delay: 0s;
+  }
+
+  .link a{
+    word-break: break-all;
+    font-size: inherit;
+    text-align: right;
+  }
+
+  .link a:hover{
+    text-decoration: underline;
+    color: #5275df;
+  }
+
+  .link i{
+    font-size: 1.5rem;
+  }
+
+  .link-text{
+    display: none;
   }
 
   .text {
     color: #ffffff;
+    width: 100%;
     font-size: 20px;
-    position: absolute;
-    overflow: hidden;
+    overflow-y: hidden;
   }
 
-  /* Small devices (phones, 576px and up) */
   @media (min-width: 576px) {
     .card{
       width: calc(160px*2);
@@ -211,17 +250,6 @@ function closeImageOverlay(event) {
     }
   }
 
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-      /* Styles for tablets */
-  }
-
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-
-  }
-
-  /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
     .card{
       width: calc(160px*2.2);
@@ -229,14 +257,26 @@ function closeImageOverlay(event) {
     }
   }
 
-  /* Ultra-wide screens (1440px and up) */
   @media (min-width: 1440px) {
     .card{
       width: calc(160px*2.5);
       height: calc(130px*2.5);
     }
     .overlay:hover, .overlay:has(+ h2:hover) {
-    height: 84%;
+      height: 90%;
+    }
+
+    .link-text {
+      display: inline;
+    }
+
+    .link a{
+      text-align: left;
+      line-height: 120%;
+    }
+
+    .link i {
+      font-size: 1rem;
     }
   }
 </style>

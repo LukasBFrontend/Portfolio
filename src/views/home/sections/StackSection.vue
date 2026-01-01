@@ -1,7 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-
-const imgWidth = ref('80px')
+  import { ref } from 'vue';
+  const imgWidth = ref('80px')
 </script>
 
 <template>
@@ -44,18 +43,15 @@ const imgWidth = ref('80px')
   }
 
   .icon:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 1s;
-
-  /* When the animation is finished, start again */
-  animation-iteration-count: 1;
+    animation: shake 1s;
+    animation-iteration-count: 1;
   }
 
   @keyframes shake {
-  0%   { transform: rotate(0deg) translate(1px, 1px); }
-  25%  { transform: rotate(4deg) translate(-2px, -1px); }
-  50%  { transform: rotate(-4deg) translate(2px, 1px); }
-  75%  { transform: rotate(3deg) translate(-1px, -1px); }
-  100% { transform: rotate(0deg) translate(0px, 0px); }
-}
+    0%   { transform: rotate(0deg) translate(1px, 1px); }
+    25%  { transform: rotate(4deg) translate(-2px, -1px); }
+    50%  { transform: rotate(-4deg) translate(2px, 1px); }
+    75%  { transform: rotate(3deg) translate(-1px, -1px); }
+    100% { transform: rotate(0deg) translate(0px, 0px); }
+  }
 </style>

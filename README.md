@@ -1,5 +1,11 @@
-# Vue 3 + Vite
+# Lukas developer portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to my developer portfolio (repository)!
+There is not much
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## CSS breakpoints:
+- Small devices (phones, 576px and up)
+- Medium devices (tablets, 768px and up)
+- Large devices (desktops, 992px and up)
+- Extra large devices (large desktops, 1200px and up)
+- Ultra-wide screens (1440px and up)

@@ -3,7 +3,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 import './style.css'
 import './assets/fontawesome/all.min.css';
 import App from './App.vue'
-import HomeView from './views/HomeView.vue';
+import HomeView from './views/home/HomeView.vue';
 
 const routes = [
   { path: '/', component: HomeView },

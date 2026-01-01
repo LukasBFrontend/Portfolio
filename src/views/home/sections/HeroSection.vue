@@ -1,7 +1,3 @@
-<script setup>
-import { ref } from 'vue';
-</script>
-
 <template>
   <section class="hero-section">
     <div class="text">
@@ -90,7 +86,7 @@ import { ref } from 'vue';
 
     font-size: 2.5rem;
     color: white;
-    background: #686868;
+    background: #272727;
 
     transition-property: transform;
     transition-duration: 0.2s;

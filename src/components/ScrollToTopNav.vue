@@ -1,41 +1,38 @@
 <script setup>
-import { ref, onUnmounted, Transition } from 'vue';
-import { useWindowScroll } from '@vueuse/core'
+  import { ref, onUnmounted, Transition } from 'vue';
+  import { useWindowScroll } from '@vueuse/core'
 
-const isDisplayed = ref(false)
-const { y } = useWindowScroll()
-const height = ref(window.innerHeight)
-const documentHeight = ref(document.body.scrollHeight)
+  const isDisplayed = ref(false)
+  const { y } = useWindowScroll()
+  const height = ref(window.innerHeight)
+  const documentHeight = ref(document.body.scrollHeight)
 
-window.addEventListener('scroll', handleScroll);
-window.addEventListener('resize', handleResize);
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleResize);
 
+  onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+    window.removeEventListener('resize', handleResize);
+  })
 
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-  window.removeEventListener('resize', handleResize);
-})
+  function handleScroll() {
+    height.value = window.innerHeight;
+    documentHeight.value = document.body.scrollHeight;
 
-function handleScroll() {
-  height.value = window.innerHeight;
-  documentHeight.value = document.body.scrollHeight;
+    setIsDisplayed(-50)
+  }
 
-  setIsDisplayed(-50)
-}
+  function handleResize() {
+    height.value = window.innerHeight;
+    documentHeight.value = document.body.scrollHeight;
 
-function handleResize() {
-  height.value = window.innerHeight;
-  documentHeight.value = document.body.scrollHeight;
+    setIsDisplayed(-50);
+  }
 
-  setIsDisplayed(-50);
-}
-
-function setIsDisplayed(offset) {
-  isDisplayed.value = y.value + height.value + offset > documentHeight.value;
-}
+  function setIsDisplayed(offset) {
+    isDisplayed.value = y.value + height.value + offset > documentHeight.value;
+  }
 </script>
-
-
 
 <template>
   <div class="background">
@@ -49,7 +46,7 @@ function setIsDisplayed(offset) {
 
 <style scoped>
 .overlay{
-  background: linear-gradient(rgb(59, 59, 65), rgb(15, 15, 15));
+  background: linear-gradient(rgb(29, 29, 32), rgb(15, 15, 15));
 
   height: 100%;
   display:flex;
@@ -63,7 +60,7 @@ function setIsDisplayed(offset) {
   width: 100%;
   position: absolute;
   left: 0;
-  background: rgb(59, 59, 65);
+  background: rgb(29, 29, 32);
 }
 
 .button{
