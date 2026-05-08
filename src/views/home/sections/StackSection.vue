@@ -5,7 +5,7 @@
 
 <template>
   <section id="skills">
-    <h2>Tech stack</h2>
+    <h2>TECH STACK</h2>
     <div class="grid">
       <img class="icon" src="/images/techstack/Csharp.svg" alt="C-sharp">
       <img class="icon" src="/images/techstack/CSS3.svg" alt="CSS">
@@ -24,7 +24,6 @@
   h2 {
     text-align: center;
     margin-bottom: 52px;
-    text-decoration: underline dotted #FFF44F;
   }
   section {
     --img-width: v-bind(imgWidth);

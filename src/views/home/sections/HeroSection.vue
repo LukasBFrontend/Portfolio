@@ -6,7 +6,7 @@
         <br/>
         I'm Lukas
         <br/>
-        <span style="color: #4169E1; text-shadow: 3px 3px 3px rgba(0,0,0,.15);">Web developer</span>
+        <span style="color: #58c537; text-shadow: 3px 3px 3px rgba(0,0,0,.20);">Coder/Aspiring Game Dev</span>
       </h1>
       <div class="link-wrapper">
         <a href="https://www.linkedin.com/in/lukas-br%C3%A5kenhielm-7724ab2ba/" target="_blank" class="links"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -23,13 +23,14 @@
 
 <style scoped>
   .hero-section{
-    background: white;
+    background: rgba(0, 0, 0, 0.801);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 100px 0;
-    box-shadow: 16px 16px 0px 0px #FFF44F;
-    border-radius: 8px
+    box-shadow: 16px 16px 0px 0px #ff4fff;
+    border-radius: 8px;
+    margin-bottom: 5rem;
   }
 
   .profile-wrapper{
@@ -54,13 +55,13 @@
     border-radius: 50%;
     z-index: 0;
 
-    background-color: #5275df;
+    background-color: #ff4fffb2;
 
   }
 
   h1{
     font-size: 4rem;
-    color: black;
+    color: white;
   }
 
   .text {
@@ -96,6 +97,6 @@
 
   .links:hover{
     transform: translateY(-10px);
-    color: #FFF44F;
+    color: #78ff4f;
   }
 </style>

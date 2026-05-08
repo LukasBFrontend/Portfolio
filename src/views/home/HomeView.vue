@@ -18,8 +18,8 @@
 
 <style scoped>
   .grid {
-    padding: 3rem;
     display: grid;
+    margin-bottom: 5rem;
   }
 
   .about {
@@ -27,15 +27,9 @@
   }
 
   hr {
-    margin: 3rem 0;
+    margin: 3rem 0 5rem;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     color: #333;
-  }
-
-  @media (min-width: 1200px) {
-    .grid {
-      padding: 3rem 1rem;
-    }
   }
 </style>

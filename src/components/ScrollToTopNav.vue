@@ -46,7 +46,7 @@
 
 <style scoped>
 .overlay{
-  background: linear-gradient(rgb(29, 29, 32), rgb(15, 15, 15));
+  background: linear-gradient(rgb(20, 20, 22), rgb(15, 15, 15));
 
   height: 100%;
   display:flex;
@@ -60,7 +60,7 @@
   width: 100%;
   position: absolute;
   left: 0;
-  background: rgb(29, 29, 32);
+  background: rgb(20, 20, 22);
 }
 
 .button{
@@ -68,7 +68,7 @@
 }
 
 .button:hover{
-  color: #FFF44F;
+  color: #78ff4f;
 }
 
 .v-enter-active,
