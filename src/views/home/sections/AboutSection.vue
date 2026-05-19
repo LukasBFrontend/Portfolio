@@ -11,11 +11,7 @@
     <br/>
     <p>
       For nearly two years I've been studying frontend development at IT-högskolan and I am just about to complete my second internship at Textual AB as of June 2026. In the meantime I've been developing games as a hobby. 
-      I've been an avid gamer for a long time but it wasn't until Viktor Stambert and I started working together that I really came to appreciate how fun developing games together with a team is.
-    </p>
-    <br />
-    <p>
-      And so, that's what I'm hoping to do. I've built a solid understanding of development through my education and hobbies. Now, I'm looking to bring my skills to the industry standard and meet some like-minded peers!
+      I've been an avid gamer for a long time but it wasn't until Viktor Stambert and I started working together that I really came to appreciate how fun developing in a team is.
     </p>
   </section>
 </template>
