@@ -21,6 +21,21 @@
       :image-srcs="['/images/flappy_dragon.png', '/images/flappy_dragon_crab.png', '/images/flappy_dragon_boss_1.png', '/images/flappy_dragon_boss_2.png']"
       title="Flappy Dragon"
       description="A unity passion project made in collaboration with my good friend Viktor Stambert, who is responsible for the artwork. Scripted using C#."
+      />
+    <ProjectCard
+      class="card"
+      :isImageLink="true"
+      project-link="https://pokedex-lubr.vercel.app/"
+      :imageSrcs="['/images/pokedex.png', '/images/pokedex_2.png', '/images/pokedex_4.png']"
+      title="Pokédex web-app"
+      description="A fully responsive web-application wrapping around an extensive API called PokéAPI. Let's the user search for and browse through pokemon. As my first personal project after my internship at TextualAI, I wanted to implement what I'd learned by making an effort to build a maintainable project infrastructure."
+    />
+    <ProjectCard
+      class="card"
+      :isImageLink="true"
+      :image-srcs="['/images/textual_ai_chat_0.png', '/images/textual_ai_chat_1.png', '/images/textual_ai_chat_2.png', '/images/textual_ai_chat_3.png']"
+      title="Textual AI chat"
+      :description="textualAiChatDescription"
     />
     <ProjectCard
       class="card"
@@ -29,13 +44,6 @@
       :image-srcs="['/images/dungeon_shooter.png', '/images/dungeon_shooter_spikeball.png', '/images/dungeon_shooter_bats.png']"
       title="Dungeon Shooter"
       description="A unity top down zelda-inspired dungeon crawler with flintlocks, muskets and aliens. Still very much in progress. Made in unity with Viktor Stambert, who is responsible for the artwork."
-    />
-    <ProjectCard
-      class="card"
-      :isImageLink="true"
-      :image-srcs="['/images/textual_ai_chat_0.png', '/images/textual_ai_chat_1.png', '/images/textual_ai_chat_2.png', '/images/textual_ai_chat_3.png']"
-      title="Textual AI chat"
-      :description="textualAiChatDescription"
     />
     <ProjectCard
       class="card"
@@ -51,13 +59,6 @@
       image-src="/images/musclemania.png"
       title="Coaching website"
       description="A responsive webpage advertising a made up company specializing in coaching, exercise programs and supplements. Made using HTML and CSS."
-    />
-    <ProjectCard
-      class="card"
-      :isImageLink="true"
-      image-src="/images/en_slemmig_torsk.png"
-      title="En slemmig torsk"
-      description="Scene modelled and captured in Blender. The image is a reference to a song by Swedish punk rock KSMB called 'En slemmig torsk', translating to 'A slimy cod' in English."
     />
     </div>
   </section>
