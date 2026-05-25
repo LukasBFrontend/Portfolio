@@ -58,7 +58,7 @@
       projectLink="https://lukasbfrontend.github.io/ITHS-HTML-och-CSS-Labb-2/"
       image-src="/images/musclemania.png"
       title="Coaching website"
-      description="A responsive webpage advertising a made up company specializing in coaching, exercise programs and supplements. Made using HTML and CSS."
+      description="A responsive webpage advertising a  company specializing in coaching, exercise programs and supplements. Made using HTML and CSS."
     />
     </div>
   </section>
