@@ -6,7 +6,7 @@
         <br/>
         I'm Lukas
         <br/>
-        <span style="color: #58c537; text-shadow: 3px 3px 3px rgba(0,0,0,.20);">Coder/Aspiring Game Dev</span>
+        <span style="color: #58c537; text-shadow: 3px 3px 3px rgba(0,0,0,.20);">Web developer/Aspiring Game Dev</span>
       </h1>
       <div class="link-wrapper">
         <a href="https://www.linkedin.com/in/lukas-br%C3%A5kenhielm-7724ab2ba/" target="_blank" class="links"><i class="fa-brands fa-linkedin-in"></i></a>
