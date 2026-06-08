@@ -10,7 +10,7 @@
     </p>
     <br/>
     <p>
-      For nearly two years I've been studying frontend development at IT-högskolan. I've just finished my second internship at TextualAI, marking the completion of my education. Now I'm looking to find a team to continue my journey!
+      For nearly two years I've been studying frontend development at IT-högskolan. I've just finished my second internship at TextualAI, marking the completion of my education. Now I'm looking to find a team to continue my journey with!
     </p>
   </section>
 </template>
