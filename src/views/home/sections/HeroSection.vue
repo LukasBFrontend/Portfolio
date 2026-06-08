@@ -27,16 +27,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 100px 0;
-    box-shadow: 16px 16px 0px 0px #ff4fff;
-    border-radius: 8px;
+    padding: 6rem 2rem;
+    box-shadow: 1rem 1rem 0rem 0rem #ff4fff;
+    border-radius: 0.5rem;
     margin-bottom: 5rem;
   }
 
   .profile-wrapper{
+    flex-shrink: 0;
     position: relative;
-    width: 400px;
-    height: 422px;
+    display: none;
+    width: 25rem;
+    height: 26rem;
   }
   .profile{
     position: absolute;
@@ -60,7 +62,7 @@
   }
 
   h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;
   }
 
@@ -79,8 +81,8 @@
 
   .links{
     border-radius: 50%;
-    width: 68px;
-    height: 68px;
+    width: 4.5rem;
+    height: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,5 +100,11 @@
   .links:hover{
     transform: translateY(-10px);
     color: #78ff4f;
+  }
+
+  @media (min-width: 1024px)  {
+    .profile-wrapper{
+      display: block;
+    }
   }
 </style>
